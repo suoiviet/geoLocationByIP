@@ -8,5 +8,6 @@ try:
 except Exception as e:
     print(e)
 else:
-    print('You are near: {city}, {region}, {country}'.format(**data))
+    print('Your IP Address: {}'.format(data['ip']))
+    print('     You are near: {city}, {region}, {country}'.format(**data))
     print('     Lat/Lng: {}E'.format(data['loc'].replace(',','N, ')))
